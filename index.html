@@ -54,11 +54,11 @@
     .notice {background:rgba(255,255,255,.58);border:1px solid #c3d2df;padding:30px;max-width:500px}
     .notice strong {display:block;color:var(--navy);margin-bottom:8px}
     .gallery {padding-block:90px}
-    .photos {display:grid;grid-template-columns:1.22fr .78fr;gap:20px;margin-top:34px}
+    .photos {display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
     .photos figure {margin:0}
-    .photos figure:first-child {grid-row:span 2}
+
     .photos img {width:100%;height:250px;object-fit:cover}
-    .photos figure:first-child img {height:calc(500px + 20px + 40px)}
+
     .photos figcaption {color:var(--muted);font-size:.85rem;padding-top:9px}
     .contact {padding-block:78px;background:var(--blue);border-top:5px solid var(--navy)}
     .contact-panel {display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
@@ -84,16 +84,16 @@
       .hero figure:before {inset:14px -8px -8px 14px}
       .section,.gallery,.shelf,.price,.contact {padding-block:54px}
       .photos {grid-template-columns:1fr 1fr;gap:14px}
-      .photos figure:first-child {grid-column:span 2;grid-row:auto}
-      .photos figure:first-child img {height:300px}
+
+
       .photos img {height:160px}
       .lead {font-size:1.12rem}
       footer .wrap {flex-direction:column}
     }
     @media (max-width:410px) {
       .photos {grid-template-columns:1fr}
-      .photos figure:first-child {grid-column:auto}
-      .photos img,.photos figure:first-child img {height:240px}
+
+      .photos img {height:240px}
     }
     @media (prefers-reduced-motion:reduce) {html {scroll-behavior:auto}}
   </style>
@@ -121,8 +121,8 @@
         <div class="info">Šis prototipas dar nepateikia konkretaus pasiūlymo: būtina patvirtinti veiklą, vietą, kainas, terminus ir kontaktus. Iki tol skambinimo mygtuko nerodome.</div>
       </div>
       <figure>
-        <img src="assets/nuotrauka-1.jpg" alt="Ramiame vandens paviršiuje atsispindintis medis rūke" width="1800" height="1200" fetchpriority="high">
-        <figcaption>Jūsų pateikta fotografija. Jos ryšį su verslo veikla dar reikia patvirtinti.</figcaption>
+        <img src="assets/vakaro-burlaivis.jpg" alt="Burlaivio siluetas virš ežero mėlynoje vakaro prieblandoje" width="2048" height="1365" fetchpriority="high">
+        <figcaption>Jūsų pateikta fotografija. Ryšys su pasiūlymu dar nepatvirtintas.</figcaption>
       </figure>
     </section>
 
@@ -154,11 +154,8 @@
     <section id="pavyzdziai" class="gallery wrap" aria-labelledby="pavyzdziai-h">
       <p class="eyebrow">Iliustracinės fotografijos</p>
       <h2 id="pavyzdziai-h">Nuotraukos</h2>
-      <p class="section-intro">Šios Jūsų pateiktos fotografijos yra iliustracinės. Patvirtintų prekių ar atliktų darbų pavyzdžių dar neturime; gavę juos pakeisime šiuos vaizdus.</p>
-      <div class="photos">
-        <figure><img loading="lazy" src="assets/nuotrauka-2.jpg" alt="Medžių šakų įrėmintas ežero peizažas" width="1800" height="1200"><figcaption>Fotografija iš pateiktų failų</figcaption></figure>
-        <figure><img loading="lazy" src="assets/nuotrauka-3.jpg" alt="Rūko apgaubtas ežeras ir medžių atspindžiai" width="1800" height="1200"><figcaption>Fotografija iš pateiktų failų</figcaption></figure>
-      </div>
+      <p class="section-intro">Pirmame ekrane ir galerijoje naudojamos penkios Jūsų pateiktos fotografijos. Jos yra iliustracinės. Patvirtintų prekių ar atliktų darbų pavyzdžių dar neturime; gavę juos pakeisime šiuos vaizdus.</p>
+      <div class="photos">\n        <figure><img loading="lazy" src="assets/ezero-salos.jpg" alt="Iš viršaus fotografuotos medžiais apaugusios ežero salos" width="2048" height="1365"><figcaption>Jūsų pateikta fotografija</figcaption></figure>\n        <figure><img loading="lazy" src="assets/apsviestas-tiltas.jpg" alt="Vakare raudonai apšviestas tiltas virš ežero" width="2048" height="1365"><figcaption>Jūsų pateikta fotografija</figcaption></figure>\n        <figure><img loading="lazy" src="assets/tiltas-sauletekyje.jpg" alt="Nedidelis tiltas ir rausvas dangus virš vandens" width="2048" height="1365"><figcaption>Jūsų pateikta fotografija</figcaption></figure>\n        <figure><img loading="lazy" src="assets/rukas-virs-ezero.jpg" alt="Medžiai ir namai prie ežero ankstyvo ryto rūke" width="2048" height="1365"><figcaption>Jūsų pateikta fotografija</figcaption></figure>\n      </div>
     </section>
 
     <section id="kontaktai" class="contact" aria-labelledby="kontaktai-h">
